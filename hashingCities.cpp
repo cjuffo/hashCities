@@ -104,7 +104,6 @@ public:
 
 			int endofcity = line.find("  ");
 			string name = line.substr(9, endofcity - 9);
-			if (name == "Los Angeles") cout << "LA LA LA LA LA\n\n";
 			unsigned int hashKey = hash(name);
 			string state = line.substr(0, 2);
 			int startofpop = line.find_first_not_of(" ", endofcity);
